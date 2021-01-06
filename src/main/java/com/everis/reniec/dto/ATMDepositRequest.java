@@ -1,4 +1,4 @@
-package com.everis.reniec.dao;
+package com.everis.reniec.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

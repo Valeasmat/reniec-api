@@ -16,7 +16,7 @@ public class ReniecController {
             response = ReniecResponse.class,
             produces = "application/stream+json")
     @ApiResponse(code = 200,message = "Successful operation",response = ReniecResponse.class)
-    @PostMapping(value = "/external/reniec/validate",produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
+    @PostMapping(value = "/external/reniec/validate",produces = MediaType.APPLICATION_JSON_VALUE)
     public Single<ReniecResponse> validate(@RequestBody ATMDepositRequest request){
         return Single.just(new ReniecResponse("Reniec",true));
     }
